@@ -38,7 +38,7 @@
 -- 현재 급여가 120,000이상 받는 사원은 몇 명이나 있습니까?
 	select count(*)										-- 2159
     from salaries
-    where salary >= 120000 and to_date >= now();
+    where salary >= 120000 and to_date >= now();		
 -- 문제9
 -- 어떤 직책들이 있나요? 중복 없이 이름이 긴 순서대로 출력해 보세요.
 	select distinct(title)
