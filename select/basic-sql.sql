@@ -31,5 +31,9 @@ order by hire_date desc;
 -- dept_emp 테이블에서 부서 번호가 d005나 d009에 속한 사원의 사번, 부서번호 출력
 select *
 from dept_emp
-where dept_emp = 'd005' 
-or dept_emp = 'd009';
+where dept_no = 'd005' 
+or dept_no = 'd009';
+
+select *
+from dept_emp
+where dept_no in('d005','d009');

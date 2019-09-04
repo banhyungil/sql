@@ -46,7 +46,7 @@
     order by length(title) desc;
 -- 문제10
 -- 현재 Engineer 직책의 사원은 총 몇 명입니까?
-	select count(*)									-- 30983
+	select count(*)	'Engineer 수'									-- 30983
     from titles
     where title='Engineer' and to_date >= now();
 -- 문제11
